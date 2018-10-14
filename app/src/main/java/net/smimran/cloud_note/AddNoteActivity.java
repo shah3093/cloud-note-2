@@ -56,7 +56,7 @@ public class AddNoteActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
-        setTitle("Note");
+        setTitle("Add Note");
 
         auth = FirebaseAuth.getInstance();
 

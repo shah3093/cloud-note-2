@@ -65,7 +65,8 @@ public class CategoryBaseNote extends Fragment {
     public void setUpRecycleView() {
         FirebaseUser user = auth.getCurrentUser();
 
-        Query query = db.collection(user.getUid()).whereEqualTo("category",category);
+        Query query = db.collection(user.getUid()).whereEqualTo("category",category)
+                .orderBy("created_at",Query.Direction.DESCENDING);
 
         FirestoreRecyclerOptions<Note> options = new FirestoreRecyclerOptions.Builder<Note>()
                 .setQuery(query, Note.class).build();

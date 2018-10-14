@@ -60,7 +60,7 @@ public class AllNote extends Fragment {
 
     public void setUpRecycleView() {
         FirebaseUser user = auth.getCurrentUser();
-        Query query = db.collection(user.getUid());
+        Query query = db.collection(user.getUid()).orderBy("created_at",Query.Direction.DESCENDING);
 
         FirestoreRecyclerOptions<Note> options = new FirestoreRecyclerOptions.Builder <Note>()
                 .setQuery(query, Note.class).build();
