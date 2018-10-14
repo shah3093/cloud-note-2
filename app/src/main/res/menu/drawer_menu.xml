@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addNote_nav"
+            android:icon="@drawable/ic_add"
+            android:title="Add Note" />
+        <item
+            android:id="@+id/allNote_nav"
+            android:icon="@drawable/ic_all"
+            android:title="All Note" />
+        <item
+            android:id="@+id/categories_nav"
+            android:icon="@drawable/ic_categories"
+            android:title="Categories" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/userGuid_nav"
+                android:icon="@drawable/ic_help"
+                android:title="User Guide" />
+            <item
+                android:id="@+id/aboutUs_nav"
+                android:icon="@drawable/ic_contacts"
+                android:title="About Us" />
+
+            <item
+                android:id="@+id/signOut_nav"
+                android:icon="@drawable/ic_power"
+                android:title="Sign out" />
+        </menu>
+    </item>
+
+</menu>

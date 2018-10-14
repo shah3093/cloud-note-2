@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/create_dateID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="30/10/1993" />
+
+
+        <TextView
+            android:id="@+id/detailsID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_dateID"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Description Description Description Description"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/categoryID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailsID"
+            android:layout_alignParentStart="true"
+            android:layout_toRightOf="@+id/detailsID"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/ic_label"
+            android:clickable="true"
+            android:text="Catgory"
+            android:textSize="16dp"
+            android:padding="5dp"/>
+
+
+        <ImageButton
+            android:id="@+id/sharebtnid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailsID"
+            android:background="@color/fui_transparent"
+            android:clickable="true"
+            android:layout_toLeftOf="@+id/deletebtn"
+            android:padding="5dp"
+            android:src="@drawable/ic_share_black" />
+
+
+        <ImageButton
+            android:id="@+id/deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailsID"
+            android:layout_alignParentEnd="true"
+            android:background="@color/fui_transparent"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
