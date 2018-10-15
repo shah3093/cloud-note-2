@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,7 +30,6 @@ public class AllNote extends Fragment {
 
     RecyclerView recyclerView;
 
-
     @Override
     public void onStart() {
         super.onStart();
@@ -46,12 +46,19 @@ public class AllNote extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        Bundle args = this.getArguments();
+
         auth = FirebaseAuth.getInstance();
-
         View view = inflater.inflate(R.layout.fragment_all_note, container, false);
-
         recyclerView = view.findViewById(R.id.recyclerID);
-        setUpRecycleView();
+
+        if (args.containsKey("NORMAL")) {
+            setUpRecycleView();
+        } else if(args.containsKey("CHARSEQ")){
+           String  chareterseq = args.getString("CHARSEQ").toString();
+            setUpCustomeRecycleView(chareterseq);
+        }
 
         FloatingActionButton floatingActionButton = view.findViewById(R.id.floatingactionbutton);
 
@@ -60,10 +67,9 @@ public class AllNote extends Fragment {
 
     public void setUpRecycleView() {
         FirebaseUser user = auth.getCurrentUser();
-        Query query = db.collection(user.getUid()).orderBy("created_at",Query.Direction.DESCENDING);
+        Query query = db.collection(user.getUid()).orderBy("created_at", Query.Direction.DESCENDING);
 
-        FirestoreRecyclerOptions<Note> options = new FirestoreRecyclerOptions.Builder <Note>()
-                .setQuery(query, Note.class).build();
+        FirestoreRecyclerOptions <Note> options = new FirestoreRecyclerOptions.Builder <Note>().setQuery(query, Note.class).build();
 
 
         noteAdapter = new NoteAdapter(options, getActivity());
@@ -71,6 +77,22 @@ public class AllNote extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(noteAdapter);
 
+
+    }
+
+    public void setUpCustomeRecycleView(String chareterseq) {
+        FirebaseUser user = auth.getCurrentUser();
+        Query query = db.collection(user.getUid()).orderBy("description")
+                .startAt(chareterseq).endAt(chareterseq+"\uf8ff");
+
+        FirestoreRecyclerOptions <Note> options = new FirestoreRecyclerOptions
+                .Builder <Note>().setQuery(query, Note.class).build();
+
+
+        noteAdapter = new NoteAdapter(options, getActivity());
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(noteAdapter);
 
     }
 
