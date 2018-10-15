@@ -21,13 +21,13 @@
     <item android:title="">
         <menu>
             <item
-                android:id="@+id/userGuid_nav"
-                android:icon="@drawable/ic_help"
-                android:title="User Guide" />
+                android:id="@+id/features_nav"
+                android:icon="@drawable/ic_list"
+                android:title="Features" />
             <item
                 android:id="@+id/aboutUs_nav"
                 android:icon="@drawable/ic_contacts"
-                android:title="About Us" />
+                android:title="About me" />
 
             <item
                 android:id="@+id/signOut_nav"

@@ -15,4 +15,57 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="featuresNote">
+        * This apps let you saved your note on cloud. From any android mobile device by login with
+        your email you will get back your note.\n\n
+        * You can work with this apps in offline. When you will be in online this apps automatically synchronized.\n\n
+        * Adding category you can easily oragnized your note. \n\n
+        * Easily add , edit and delete note. \n\n
+        * This is add free apps.\n\n
+    </string>
+
+    <string name="infromaboutapps">
+        If you found any bug or you have any  recommendation. Without hesitate let me infrom .\n\n
+
+        Shah Muhammad Imran\n
+        +880-1866331029\n
+        smimran.eng@gmai.com
+    </string>
+
+    <string name="abboutme">
+        Over the last 2+ years, developed a wide range of web and mobile application. \n
+Skilled on several Programming Language, PHP , PHP Framework Laravel , Codeigniter , YII2 , Android , JavaScript , jQuery ,Vue.js . I developed several Web and Android applications.
+ like to write clean and well-designed code. I am a good learner and a programmer of Programming contest \n\n
+
+My Major skill:\n
+-------------------------------------\n
+# HTML 5\n
+# CSS 3 \n
+# Bootstrap 3 / 4 \n
+# JavaScript\n
+# jQuery\n
+# vue.js\n
+# JSON\n
+# RESTful web services\n\n
+
+# PHP\n
+# Laravel\n
+# Codeigniter\n
+# YII2\n
+# MySql\n\n
+
+# Android\n
+# SQLite\n
+        #Friebase\n\n
+
+# Git version control\n\n
+
+Feel free to contact me at:\n
+Mobile: +8801866331029\n
+Email: smimran.eng@gmail.com\n
+website: http://smimran.net/\n
+linkedin: https://www.linkedin.com/in/shah-muhammad-imran/\n\n
+    </string>
 </resources>

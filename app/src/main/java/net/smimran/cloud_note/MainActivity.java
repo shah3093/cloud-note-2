@@ -135,6 +135,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Categories()).commit();
                 navigationView.setCheckedItem(R.id.categories_nav);
                 break;
+
+            case R.id.features_nav:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FeaturesFragment()).commit();
+                navigationView.setCheckedItem(R.id.features_nav);
+                break;
+
+            case R.id.aboutUs_nav:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutMe()).commit();
+                navigationView.setCheckedItem(R.id.aboutUs_nav);
+                break;
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);
@@ -254,7 +264,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public boolean onMenuItemActionCollapse(MenuItem menuItem) {
                 Bundle args = new Bundle();
                 args.putString("NORMAL", "normal");
-                AllNote allNote= new AllNote();
+                AllNote allNote = new AllNote();
                 allNote.setArguments(args);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, allNote).commit();
                 return true;
