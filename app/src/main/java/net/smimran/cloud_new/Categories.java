@@ -1,4 +1,4 @@
-package net.smimran.cloud_note;
+package net.smimran.cloud_new;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -19,6 +19,8 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
+
+import net.smimran.cloud_new.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

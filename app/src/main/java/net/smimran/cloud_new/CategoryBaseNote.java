@@ -1,4 +1,4 @@
-package net.smimran.cloud_note;
+package net.smimran.cloud_new;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +17,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+
+import net.smimran.cloud_new.R;
 
 public class CategoryBaseNote extends Fragment {
 

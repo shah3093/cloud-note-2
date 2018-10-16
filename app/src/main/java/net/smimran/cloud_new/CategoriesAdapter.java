@@ -1,4 +1,4 @@
-package net.smimran.cloud_note;
+package net.smimran.cloud_new;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import net.smimran.cloud_new.R;
 
 import java.util.ArrayList;
 import java.util.Map;

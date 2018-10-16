@@ -1,4 +1,4 @@
-package net.smimran.cloud_note;
+package net.smimran.cloud_new;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("net.smimran.cloud_note", appContext.getPackageName());
+        assertEquals("net.smimran.cloud_new", appContext.getPackageName());
     }
 }

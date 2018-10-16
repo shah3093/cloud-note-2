@@ -1,4 +1,4 @@
-package net.smimran.cloud_note;
+package net.smimran.cloud_new;
 
 public class Note {
     String category,description,created_at,update_at;

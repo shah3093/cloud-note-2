@@ -1,4 +1,4 @@
-package net.smimran.cloud_note;
+package net.smimran.cloud_new;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+
+import net.smimran.cloud_new.R;
 
 public class NoteAdapter extends FirestoreRecyclerAdapter<Note, NoteAdapter.NoteHolder> {
 
@@ -76,7 +78,7 @@ public class NoteAdapter extends FirestoreRecyclerAdapter<Note, NoteAdapter.Note
             @Override
             public void onClick(View view) {
                 String noteid = getSnapshots().getSnapshot(position).getReference().getId();
-                Intent intent = new Intent(context, UpdateNoteActivity.class);
+                Intent intent = new Intent(context, ViewNoteActivity.class);
                 intent.putExtra("NOTEID", noteid);
                 context.startActivity(intent);
             }

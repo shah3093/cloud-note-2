@@ -8,18 +8,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:316982848156:android:e067c7cc0a70752a",
+        "mobilesdk_app_id": "1:316982848156:android:de7b77e05f82f5bc",
         "android_client_info": {
-          "package_name": "net.smimran.cloud_note"
+          "package_name": "net.smimran.cloud_new"
         }
       },
       "oauth_client": [
         {
-          "client_id": "316982848156-392kc6khciv9mko65hn6rr3drggcjodt.apps.googleusercontent.com",
+          "client_id": "316982848156-iu2qr0bvl2ehcu2s3osde09s6qh97tu1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "net.smimran.cloud_note",
-            "certificate_hash": "92c11d6a63b522e07d413ca398140a7eb4d81327"
+            "package_name": "net.smimran.cloud_new",
+            "certificate_hash": "f44ffd88eb1149d07ca930aba9ce85fdab6407ee"
           }
         },
         {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "316982848156-4rgpcqrbvlabf093lka6nkn3pcgl0ukh.apps.googleusercontent.com",
+              "client_id": "316982848156-hi9b5r6ffnac7nlff2hcdu0241ml4src.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -52,20 +52,12 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:316982848156:android:4981c36a654223d5",
+        "mobilesdk_app_id": "1:316982848156:android:e067c7cc0a70752a",
         "android_client_info": {
-          "package_name": "net.smimran.cloudnote"
+          "package_name": "net.smimran.cloud_note"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "316982848156-v0d6sh9l8vapcr9da117i0pt89sr24i9.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "net.smimran.cloudnote",
-            "certificate_hash": "92c11d6a63b522e07d413ca398140a7eb4d81327"
-          }
-        },
         {
           "client_id": "316982848156-4rgpcqrbvlabf093lka6nkn3pcgl0ukh.apps.googleusercontent.com",
           "client_type": 3
@@ -81,13 +73,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "316982848156-4rgpcqrbvlabf093lka6nkn3pcgl0ukh.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

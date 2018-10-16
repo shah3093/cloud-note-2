@@ -26,6 +26,8 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15sp"
+            android:textColor="#000"
+            android:textIsSelectable="true"
             android:text="@string/featuresNote"/>
 
         <TextView
@@ -36,6 +38,8 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15sp"
+            android:textColor="#000"
+            android:textIsSelectable="true"
             android:text="@string/infromaboutapps"/>
 
 
