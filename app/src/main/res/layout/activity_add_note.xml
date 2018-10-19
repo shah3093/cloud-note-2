@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="15dp"
     android:id="@+id/add_note_layout"
     tools:context=".AddNoteActivity">
 
@@ -16,19 +17,31 @@
         android:dropDownAnchor="@id/description"
         android:hint="Category name"
         android:padding="12dp"
+        android:background="#D9D9D9"
         android:popupBackground="#dcf2c6"
         />
 
-    <EditText
-        android:id="@+id/description"
+    <ScrollView
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
-        android:paddingBottom="12dp"
-        android:background="@color/fui_transparent"
-        android:hint="write note here"
-        android:inputType="textMultiLine|textWebEditText"
-        />
+        android:background="#D9D9D9"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:background="@color/fui_transparent"
+            android:hint="write note here"
+            android:inputType="textMultiLine|textWebEditText"
+            />
+
+
+    </ScrollView>
+
+
 
 </LinearLayout>

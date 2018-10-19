@@ -5,30 +5,40 @@
     android:id="@+id/add_note_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     android:orientation="vertical"
     tools:context=".UpdateNoteActivity">
 
     <AutoCompleteTextView
-        android:layout_marginTop="5dp"
         android:id="@+id/category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#D9D9D9"
         android:dropDownAnchor="@id/description"
         android:hint="Category name"
         android:padding="12dp"
-        android:popupBackground="#dcf2c6"
-        />
+        android:popupBackground="#dcf2c6" />
 
-    <EditText
-        android:id="@+id/description"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
-        android:paddingBottom="12dp"
-        android:background="@color/fui_transparent"
-        android:hint="write note here"
-        android:inputType="textMultiLine|textWebEditText"
-        />
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="#D9D9D9">
+
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fui_transparent"
+            android:hint="write note here"
+            android:inputType="textMultiLine|textWebEditText"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp" />
+
+    </ScrollView>
+
 
 </LinearLayout>
