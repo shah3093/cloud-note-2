@@ -78,7 +78,6 @@ public class AllNote extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(noteAdapter);
 
-
     }
 
     public void setUpCustomeRecycleView(String chareterseq) {

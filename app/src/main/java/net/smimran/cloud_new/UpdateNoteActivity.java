@@ -113,7 +113,7 @@ public class UpdateNoteActivity extends AppCompatActivity {
 
     public void updateNote() {
         String descriptionStr = description.getText().toString();
-        String categoryStr = category.getText().toString();
+        String categoryStr = category.getText().toString().trim();
         String date = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
 
         if (categoryStr.trim().isEmpty() || descriptionStr.trim().isEmpty()) {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cloud Note</string>
+    <string name="app_name">Note Cloud</string>
 
     <string name="no_internet">  You have to sign in via internet. After sign in you can work in offline and online.  </string>
 

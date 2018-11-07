@@ -4,18 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     tools:context=".ViewNoteActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp">
 
         <TextView
             android:id="@+id/showcategoryid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Category"
+            android:text="loading....."
             android:textStyle="bold" />
 
         <TextView
@@ -23,22 +20,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:text="10/12/18"
+            android:text="loading....."
             android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/showcategoryid"
+        android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/notedetailsid"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/showcategoryid"
-            android:layout_marginTop="10dp"
-            android:text="Hello world !! what's app man"
+            android:layout_height="match_parent"
+            android:text="loading.....\n Please wait"
             android:textColor="#000"
             android:textIsSelectable="true"
             android:textSize="17sp" />
 
+    </ScrollView>
 
-    </RelativeLayout>
 
 
     <android.support.design.widget.FloatingActionButton
@@ -85,7 +87,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="10dp"
         android:elevation="8dp"
-        android:src="@drawable/ic_mic"
+        android:src="@drawable/ic_volume_up"
         app:fabSize="normal" />
 
 </RelativeLayout>

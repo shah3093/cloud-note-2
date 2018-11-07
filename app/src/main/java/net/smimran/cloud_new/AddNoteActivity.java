@@ -78,7 +78,7 @@ public class AddNoteActivity extends AppCompatActivity {
     }
 
     private void saveNote() {
-        String categoryStr = category.getText().toString();
+        String categoryStr = category.getText().toString().trim();
         String descriptionStr = description.getText().toString();
         String date = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
 

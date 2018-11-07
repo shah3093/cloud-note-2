@@ -237,6 +237,7 @@ public class ViewNoteActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 closefab();
+                popupWindow.dismiss();
 
                 mTTs.stop();
 
@@ -251,6 +252,8 @@ public class ViewNoteActivity extends AppCompatActivity {
                 mTTs.setSpeechRate(speed);
 
                 speak();
+
+
 
             }
         });
