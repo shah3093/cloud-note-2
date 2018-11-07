@@ -2,6 +2,8 @@
 
   * This apps let you saved your note on cloud. From any android mobile device by login with your email you will get back your note.
   
+  * This app can convert Bengali / english text to speech. 
+  
   * You can work with this apps in offline. When you will be in online this apps automatically synchronized.
   
   * Adding category you can easily oragnized your note.
